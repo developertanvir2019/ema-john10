@@ -1,0 +1,19 @@
+.my-nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.my-navi a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    margin-left: 25px;
+}

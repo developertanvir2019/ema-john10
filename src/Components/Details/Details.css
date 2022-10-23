@@ -1,0 +1,6 @@
+.sticky {
+    position: sticky;
+    top: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+}

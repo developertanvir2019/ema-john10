@@ -1,0 +1,33 @@
+.review-item img {
+    width: 110px;
+    padding-right: 10px;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    border: 2px solid slateblue;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.review-details-container {
+    display: flex;
+    align-items: center;
+}
+
+.review-item button {
+    background-color: orangered;
+    border: 1px solid lightblue;
+    padding: 7px 18px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+
+.review-item button:hover {
+    background-color: aquamarine;
+    cursor: help
+}
