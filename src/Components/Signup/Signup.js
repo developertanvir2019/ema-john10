@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../UserContext';
 const Signup = () => {
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/';
     const { createUser } = useContext(AuthContext)
     const handleSubmit = e => {
         e.preventDefault();
@@ -14,6 +16,7 @@ const Signup = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user)
+                Navigate(from, { replace: true })
                 form.reset();
             })
             .catch(err => {

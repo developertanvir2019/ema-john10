@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UseTitle from '../../UseTitle/UseTitle';
 import "./Details.css"
 
 const Details = ({ cart }) => {
+    UseTitle('Details')
     let total = 0;
     let totalShipping = 0;
     let quantity = 0;

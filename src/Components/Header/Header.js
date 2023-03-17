@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
@@ -25,7 +24,6 @@ const Header = () => {
                             <Link to="/signup">SignUp</Link>
                         </>
                 }
-                <h5 className='text-white'>{user?.email}</h5>
             </div>
 
         </nav>

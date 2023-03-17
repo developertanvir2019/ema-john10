@@ -12,3 +12,8 @@
 .information-container {
     background-color: bisque;
 }
+
+.changeClr {
+    background-color: purple;
+    font-weight: 600;
+}

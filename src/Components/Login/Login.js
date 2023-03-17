@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import UseTitle from '../../UseTitle/UseTitle';
 import { AuthContext } from '../UserContext';
 
 const Login = () => {
+    UseTitle('Login')
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
